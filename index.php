@@ -67,8 +67,10 @@
                         </td>
                         <td><?php echo $file['created_at'] ?></td>
                         <td>
-                            <button type="button" class="btn btn-outline-primary">Edit</button>
-                            <button type="button" class="btn btn-outline-danger">Delete</button>
+                            <form method="post" action="delete.php">
+                                <input type="hidden" name="id" value="<?php echo $file['id'] ?>" >
+                                <button type="submit" class="btn btn-outline-danger">Delete</button>
+                            </form>
                         </td>
                     </tr>
                     <?php
