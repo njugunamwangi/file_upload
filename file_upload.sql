@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 01, 2022 at 10:29 AM
+-- Generation Time: Sep 01, 2022 at 10:55 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -34,14 +34,6 @@ CREATE TABLE `files` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `files`
---
-
-INSERT INTO `files` (`id`, `file`, `created_at`) VALUES
-(1, 'files/EPrHwRhK8T/download.jpeg', '2022-09-01 10:23:46'),
-(2, '', '2022-09-01 10:27:11');
-
---
 -- Indexes for dumped tables
 --
 
@@ -59,7 +51,7 @@ ALTER TABLE `files`
 -- AUTO_INCREMENT for table `files`
 --
 ALTER TABLE `files`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
