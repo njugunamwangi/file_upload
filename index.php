@@ -44,7 +44,39 @@
         </div>
         <?php
     } else {
-
+        ?>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Image</th>
+                <th scope="col">Created At</th>
+                <th scope="col">Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <?php
+                foreach ($files as $i => $file) {
+                    ?>
+                    <tr>
+                        <th scope="row">
+                            <?php echo $i + 1?>
+                        </th>
+                        <td>
+                            <img src="<?php echo $file['file']?>" class="thumbnail">
+                        </td>
+                        <td><?php echo $file['created_at'] ?></td>
+                        <td>
+                            <button type="button" class="btn btn-outline-primary">Edit</button>
+                            <button type="button" class="btn btn-outline-danger">Delete</button>
+                        </td>
+                    </tr>
+                    <?php
+                }
+            ?>
+            </tbody>
+        </table>
+        <?php
     }
 ?>
 
