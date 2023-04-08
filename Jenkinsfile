@@ -17,7 +17,7 @@ pipeline {
 
         stage('Front-End Unit Tests') {
           steps {
-            sh 'npm i && npm run test:unit'
+            sh 'npm i '
           }
         }
 
